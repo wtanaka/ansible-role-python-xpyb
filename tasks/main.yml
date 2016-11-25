@@ -3,8 +3,8 @@
 
 - include: include_vars.yml
 
-- include: epel.yml
-  when: ansible_distribution == 'CentOS'
+#- include: epel.yml
+#  when: ansible_distribution == 'CentOS'
 
 - include: Debian.yml
   when: ansible_os_family == 'Debian'
